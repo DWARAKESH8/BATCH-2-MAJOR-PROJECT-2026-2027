@@ -1,0 +1,39 @@
+Post-Event Records and Incident Evidence Procedure
+
+Purpose. Two distinct purposes, and both matter. The first is learning: aggregated records
+across many events show which gates chronically bottleneck, at what time, and under what
+conditions, and that evidence justifies permanent changes to the physical layout in a way that
+individual recollections never do. The second is accountability: every public inquiry into a
+crowd disaster has had to establish who knew what, and when. Reconstructing that from memory
+after the event is not possible.
+
+What must be retained for every event.
+- The full time series of measurements per zone: occupancy, local density, movement speed,
+  directional coherence, throughput and crowd pressure.
+- Every alert raised, with its severity, zone, triggering measurement, and timestamp.
+- Every acknowledgement, with the identity of the person who acknowledged it, what action they
+  reported taking, and the time of that acknowledgement.
+- The recommended action generated for each alert, together with the source documents it was
+  drawn from, so that the basis of the advice can be examined afterwards.
+- Any alert that was never acknowledged. These are the most important records in the set.
+- The calibration state of each camera during the event, since it conditions every density
+  figure reported.
+
+What to review after every event, not only after incidents.
+- The highest density reached in each zone and how long it was held.
+- The interval between the first alert for an incident and the first acknowledgement.
+- The interval between acknowledgement and the action taking physical effect.
+- Any alert judged a false alarm, and why. A high false-alarm rate is a safety problem in its
+  own right, because it trains operators to disregard the system.
+- Zones that recur across events. A gate that reaches four persons per square metre at every
+  event is a design fault, not an operational one, and no amount of marshalling will fix it.
+
+Privacy. Retain measurements, not identities. The system records how many people were in a zone
+and how they moved, and does not perform facial recognition or identify individuals. Retention
+of the underlying video should follow the venue's existing policy and should not be extended
+merely because analysis was run over it.
+
+Data quality caveats to record alongside the numbers. Note periods of heavy detector occlusion,
+where counts should be read as lower bounds; periods when a camera was uncalibrated, where
+densities are relative rather than absolute; and any camera outage, since an absence of alerts
+from an unmonitored zone is not evidence that the zone was safe.

@@ -1,0 +1,35 @@
+Panic Dispersal and Escape Behaviour Standard Operating Procedure
+
+What it is. A crowd moving away from a perceived threat at speed and in scattering directions.
+Density typically falls rather than rises. The injury profile is falls, trampling and crush
+against fixed obstacles, not compressive asphyxia in the open.
+
+This is a fundamentally different failure from a crush, and several of the correct responses to
+a crush are actively harmful here. Metering flow, narrowing an exit or holding people back are
+appropriate for congestion and dangerous during a dispersal.
+
+Recognition. Mean movement speed rises sharply above the site baseline, often to running pace.
+Directions scatter rather than aligning. Density falls in the origin area and rises abruptly at
+exits and at any fixed obstruction. The onset is sudden, unlike congestion which builds.
+
+Immediate actions, in order.
+1. Identify and neutralise the trigger. Dispersals have a cause: a loud noise, a fight, smoke,
+   a rumour, a barrier collapse, a firework. Removing or explaining the cause ends the event
+   faster than any crowd-management measure.
+2. Open every exit fully and immediately. Do not meter, do not narrow, do not check tickets.
+3. Clear trip hazards from the direction of travel. Falls in the flow line are the principal
+   injury mechanism, and each fall creates a secondary obstruction.
+4. Post marshals to pull fallen people sideways out of the flow, not to stand in it.
+5. Broadcast a calm, factual announcement naming the safe direction and stating that there is
+   room for everyone. Silence increases panic; vague reassurance does not help. If the threat
+   is not real, say so plainly and say what the noise or sight actually was.
+6. Watch the exits and any fixed obstruction. Casualties in a dispersal occur where fast-moving
+   people meet something that does not move.
+
+Prohibited actions. Do not close or narrow exits to control the flow: that converts a stampede
+into a crush against a fixed barrier, which is far more lethal than the dispersal itself. Do not
+send responders against the flow. Do not use the word "panic" in any announcement.
+
+Aftermath. Escape behaviour often reverses within a minute once the trigger is understood.
+Prepare for the returning flow, which will meet people still leaving and produce a counter-flow
+in the same corridor. Have a one-way plan ready before that happens.

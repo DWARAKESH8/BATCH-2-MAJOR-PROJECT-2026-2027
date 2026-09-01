@@ -1,0 +1,37 @@
+Crowd Crush: Incident Patterns and Early Warning Signs
+
+The common sequence. Reviews of crowd-crush incidents repeatedly show the same progression
+rather than a single sudden failure:
+1. A local blockage or constriction appears, often small and often removable.
+2. Arrivals continue at the previous rate because nobody upstream knows about it.
+3. Density rises behind the blockage while throughput through it falls.
+4. Route confusion or a closed exit generates a counter-flow inside the queue.
+5. Pushing from the rear begins, transmitted forward through bodies as pressure waves.
+6. Someone falls; the space they occupied closes; others fall into it.
+7. Recognition by the control room comes late, because each individual camera view looked
+   merely busy rather than obviously dangerous.
+
+Step seven is the one worth dwelling on. In almost every case there was video, and there were
+people watching it. What was missing was measurement: nobody could say that density had gone
+from 2.8 to 4.1 in ninety seconds, because nobody was computing it.
+
+Early warning signs, in rough order of appearance.
+- Throughput falling while the queue behind grows. The earliest reliable sign.
+- A sudden drop in average walking speed with no change in the number of people.
+- Repeated backward or lateral movement in a crowd that is supposed to be advancing.
+- Stop-and-go waves: the crowd surges, stalls, surges again, at intervals of a few seconds.
+- People clustering at a narrow point rather than passing through it.
+- Raised voices, arms raised above the crowd, objects held overhead.
+- Requests to staff from within the crowd, which frequently precede formal recognition.
+
+Physical facts that shape the response.
+Relief must come from the front of a crush. Pressure accumulates from behind, so extraction or
+barrier release at the rear achieves nothing and adds delay.
+Compressive asphyxia does not require anyone to fall and does not require panic. It occurs in
+crowds that are entirely calm and cooperative.
+The dangerous variable is pressure, not density alone: local density multiplied by the variance
+of local velocities. Turbulent, irregular motion at moderate density is more dangerous than
+uniform motion at higher density.
+Once turbulence begins, the situation can progress from uncomfortable to fatal in well under a
+minute, which is shorter than the time any physical intervention takes to have effect. This is
+why acting on the trend rather than the level is the whole of the discipline.

@@ -1,0 +1,44 @@
+{
+  "note": "Ground-truth homography for the CrowdGuard simulator camera.",
+  "image_points": [
+    [
+      80.0,
+      520.0
+    ],
+    [
+      880.0,
+      520.0
+    ],
+    [
+      610.0,
+      150.0
+    ],
+    [
+      350.0,
+      150.0
+    ]
+  ],
+  "world_points": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      12.0,
+      0.0
+    ],
+    [
+      12.0,
+      20.0
+    ],
+    [
+      0.0,
+      20.0
+    ]
+  ],
+  "world_extent_m": [
+    12.0,
+    20.0
+  ],
+  "area_m2": 240.0
+}

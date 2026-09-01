@@ -1,0 +1,36 @@
+Inflow Metering and Early Intervention Standard Operating Procedure
+
+Principle. Every crowd-safety intervention has a latency between the decision and its physical
+effect. Closing or opening a gate takes roughly a minute. Establishing a diversion route takes
+around two minutes. Walking marshals into position takes around three. A public address
+announcement changes behaviour in about thirty seconds, and only for the fraction of the crowd
+that hears and believes it. Meanwhile a crowd can pass from crowded to critical in under a
+minute. It follows that an intervention triggered when the situation is already dangerous
+cannot arrive in time, and the only interventions that work are the ones started on the trend.
+
+When to meter. Begin metering inflow when occupancy is rising steadily and local density is
+approaching three persons per square metre, even though nothing yet looks wrong. This is the
+cheapest intervention available and its cost rises steeply with delay: metering a queue of two
+hundred is routine, metering a queue of two thousand is a public order problem.
+
+How to meter.
+1. Meter at the furthest upstream decision point that still has holding space, not at the
+   constriction itself. Holding people where there is room is the entire technique.
+2. Release in batches sized to the discharge capacity of the constriction downstream, with a
+   pause between batches. Continuous trickle release causes people to bunch at the aperture.
+3. Tell the held crowd what is happening and roughly how long. An unexplained hold generates
+   pushing; an explained hold generally does not.
+4. Keep counting. Metering without measuring the effect is guesswork.
+5. Stop metering as soon as downstream throughput recovers. Holding longer than necessary
+   builds a second queue that will itself need managing.
+
+Pre-conditions to have ready before an event. Nominate the metering points and the holding
+areas in advance and record their capacity. Agree the trigger levels with the safety officer
+before the event, in writing, so that no argument about thresholds is required during it.
+Confirm the diversion routes are physically open and staffed. Confirm who has authority to stop
+inflow and confirm they can be reached in under thirty seconds.
+
+Recording. Log the trigger measurement, the decision time, the time the first batch was held,
+and the downstream throughput before and after. If throughput does not recover within two
+minutes, the constriction has a physical cause that metering will not fix, and it must be
+inspected directly.

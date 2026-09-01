@@ -1,0 +1,36 @@
+Counter-Flow and Opposing Stream Standard Operating Procedure
+
+Scope. Applies wherever two groups need to move in opposing directions through shared space:
+concourses at changeover, corridors serving both an arriving and a departing crowd, shared
+stairways, and any route where people turn back after finding an exit closed.
+
+Why it matters. Opposing streams do not simply share a corridor. They interlock. Each stream
+obstructs the other, individual walking speed falls, hesitation and side-stepping increase, and
+throughput in both directions collapses well below what either would achieve alone. Density
+then rises from both ends at once, which is why counter-flow so often appears in the sequence
+preceding a crush rather than as an isolated problem.
+
+Recognition. The diagnostic sign is people making progress in two opposite directions along the
+same axis, not merely people looking disordered. A jammed crowd also looks chaotic while going
+nowhere, and it requires the opposite response, so the two must be told apart before acting.
+Ask: are individuals actually arriving somewhere, in two directions? If yes, it is counter-flow.
+
+Immediate actions, in order.
+1. Impose one-way movement and announce the direction clearly before density rises. This is
+   cheap now and physically impossible once the corridor is packed.
+2. Physically separate the streams with line barriers or a marshal line. A painted line or a
+   verbal instruction is not sufficient once people are under pressure.
+3. Divert the minority stream to an alternative route entirely. Interleaving two streams
+   through one space is almost always worse than sending one of them somewhere else.
+4. Identify why the opposing stream exists. People rarely walk against a crowd without a
+   reason: a closed exit, an unmarked route, a missed turn, a re-entry policy. Removing the
+   cause removes the counter-flow.
+5. Post marshals at the point where the streams meet, not at the ends of the corridor.
+
+Prohibited actions. Do not attempt to reverse a stream that is already dense and slow. If the
+crowd has stopped moving, treat it as a blockage: reversing people inside a jam creates
+opposing pressure within the jam itself, which is exactly the mechanism that causes falls.
+
+Announcements. Keep them short, name the direction, name the alternative route, and repeat the
+same wording. Conflicting or changing instructions increase hesitation, and hesitation in a
+dense crowd is what converts congestion into stoppage.

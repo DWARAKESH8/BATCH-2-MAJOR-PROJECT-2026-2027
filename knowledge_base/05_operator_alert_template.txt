@@ -1,0 +1,43 @@
+Control Room Alert and Broadcast Templates
+
+Structure of an internal alert. Every alert passed to a supervisor or marshal must contain, in
+this order: severity, location, the measurement that triggered it, the suspected mechanism, the
+recommended action, the time available, and a reference number for acknowledgement.
+
+Worked example.
+  SEVERITY: Alert
+  LOCATION: Gate 3 throat
+  MEASUREMENT: peak local density 4.3 persons per square metre, throughput down 40 percent over
+    ninety seconds, counter-flow present
+  MECHANISM: bottleneck congestion with opposing stream from the closed east exit
+  ACTION: meter inflow at Gate 3 approach; open Gate 4 as diversion; two marshals to the throat
+  TIME AVAILABLE: critical density projected in approximately 90 seconds on current trend;
+    opening a diversion route takes about 120 seconds to take effect, so act now
+  REFERENCE: A-4417
+
+Acknowledgement. The receiving supervisor must acknowledge with the reference number, state what
+action they are taking, and state their location. An unacknowledged alert is an open alert and
+must be repeated to the next person in the chain, not simply logged.
+
+Public address principles.
+- One instruction per announcement. Two instructions halve compliance.
+- Name the destination explicitly. "Move to Gate 4" not "use an alternative exit".
+- Say what people will find there, so they believe the instruction is worth following.
+- Repeat identical wording. Changed wording is heard as new information and causes hesitation.
+- Never say the words "panic", "crush" or "emergency" to a dense crowd unless evacuation is
+  actually being ordered.
+- Address behaviour that helps: stop pushing forward, keep arms at chest height, help anyone
+  who falls, keep moving steadily.
+
+Example broadcasts.
+Congestion: "Gate 4 is now open and there is plenty of room. Please follow the marshals to your
+left and keep moving steadily."
+Counter-flow: "This walkway is now one-way. If you are heading toward the north stand, please
+use the outer route signposted by staff."
+Severe compression: "Everyone please stop pushing forward. Keep your arms up at chest height.
+Staff are opening the barriers ahead of you. Do not turn around."
+
+Recording obligations. Log the time each alert was raised, the time it was acknowledged, who
+acknowledged it, what action was taken, and the time the action took effect. These timestamps
+are the primary evidence in any subsequent review, and reconstructing them afterwards from
+memory is not possible.

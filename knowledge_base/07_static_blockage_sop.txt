@@ -1,0 +1,35 @@
+Static Blockage and Crowd Standstill Standard Operating Procedure
+
+What it is. A dense crowd that has stopped moving while people continue to arrive behind it.
+The crowd is not turbulent, not panicked, and frequently entirely calm. It is simply stuck.
+This is the state immediately preceding a crush, and it is the last point at which
+intervention is straightforward.
+
+Recognition. High density combined with near-zero movement, low directional disorder, and a
+broad stopped front rather than a funnel. Throughput is effectively zero. The distinguishing
+feature against a bottleneck is shape: a bottleneck squeezes people into a narrow column at an
+aperture, whereas a blockage stops a wide front where it stands. The distinguishing feature
+against turbulence is motion: turbulence moves violently, a blockage does not move at all.
+
+Why it is dangerous. Arrivals do not stop simply because movement has. Every second of
+standstill adds people to the back of a crowd that cannot absorb them, and the resulting
+pressure has no release path. The danger grows with time held, not with the instantaneous
+reading, which is why the duration of the standstill matters more than its density.
+
+Immediate actions, in order.
+1. Stop inflow at every upstream decision point immediately. This is the only action that
+   addresses the cause.
+2. Find and clear the obstruction at the head of the standstill. Blockages usually have a
+   specific, physical, removable cause: a closed door, a fallen barrier, a medical incident, a
+   stalled vehicle, a queue check that has stopped, a locked gate nobody has reported.
+3. Open a release path in the direction the crowd is already facing. People will move forward
+   readily and will resist being turned.
+4. Send a marshal physically to the head of the crowd to report what is actually there. Camera
+   views frequently do not show the obstruction, and the control room's assumption about the
+   cause is often wrong.
+5. If the crowd has not begun moving within sixty seconds, escalate to the crush response.
+
+Prohibited actions. Do not broadcast any message that causes people to turn around or move
+back. Reversing a jammed crowd creates opposing pressure inside the jam, and the people at the
+interface have nowhere to go. Do not add marshals into the body of the crowd; work the edges
+and the head.

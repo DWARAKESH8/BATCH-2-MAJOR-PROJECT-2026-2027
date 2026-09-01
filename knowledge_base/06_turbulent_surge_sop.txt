@@ -1,0 +1,34 @@
+Crowd Turbulence and Stop-and-Go Surge Standard Operating Procedure
+
+What it is. At high density a crowd stops behaving like a collection of individuals and starts
+behaving like a compressible medium. Pressure applied at one point propagates through contact,
+producing shock waves that travel backward through the crowd. People are displaced laterally
+without choosing to move and without being able to resist. This regime is called crowd
+turbulence, and its onset is measured as local density multiplied by the variance of local
+velocities, a quantity that rises sharply before any visible catastrophe.
+
+Recognition. The crowd surges forward, stalls, and surges again on a cycle of a few seconds.
+Individuals are pushed sideways as well as forward. Density is high and irregular rather than
+uniform. Arms and objects appear above the crowd surface. Sound changes: the crowd becomes
+either markedly louder or abruptly quieter.
+
+This is the mechanism behind the most lethal recorded crowd incidents. It appears at densities
+that a casual observer would describe merely as very crowded, and it is not preceded by panic.
+
+Immediate actions, in order.
+1. Stop all inflow to the affected block immediately. Not reduce; stop.
+2. Open every available egress route out of the block, including routes normally reserved.
+3. Insert marshals from the DOWNSTREAM side to break the wave laterally in sections. Sending
+   responders against the flow puts them inside the wave and removes them as responders.
+4. Give one clear, calm instruction over public address and repeat it unchanged. Conflicting
+   messages cause parts of the crowd to change direction, which amplifies the wave.
+5. Stage medical resources at the densest edge before casualties are reported, not after.
+6. Where a stage, screen or attraction is drawing the crowd forward, stop the attraction. A
+   pause in the show removes the driving force more effectively than any barrier.
+
+Prohibited actions. Do not narrow or close exits in an attempt to control the flow. Do not
+attempt to move responders upstream through the crowd. Do not instruct the crowd to turn around.
+
+Escalation. Turbulence is a major incident by definition. Notify the safety officer, medical
+lead and, where the scale warrants it, external emergency services at the point of recognition
+rather than after casualties appear.

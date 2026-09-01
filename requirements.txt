@@ -1,0 +1,29 @@
+# --- core (required) ---------------------------------------------------------
+opencv-python>=4.8.0          # video I/O and drawing
+numpy>=1.24.0                 # numerical core
+pandas>=2.0.0                 # tabular handling and exports
+scipy>=1.10.0                 # spatial distance for tracking
+scikit-learn>=1.3.0           # TF-IDF retrieval fallback + Random Forest baseline
+joblib>=1.3.0                 # model serialisation
+
+# --- dashboard ---------------------------------------------------------------
+streamlit>=1.35.0             # control-room dashboard
+plotly>=5.20.0                # timeline and diagnostic charts
+
+# --- detection ---------------------------------------------------------------
+# Optional in practice: without it the system falls back to OpenCV HOG, and the
+# simulated scenarios bypass detection entirely.
+ultralytics>=8.2.0            # YOLOv8 person detection
+torch>=2.1.0                  # backend for YOLO and the temporal forecaster
+
+# --- retrieval ---------------------------------------------------------------
+# Optional: RAGIndex falls back to TF-IDF automatically if either is missing,
+# which is what makes fully offline operation possible.
+sentence-transformers>=2.7.0  # all-MiniLM-L6-v2 embeddings
+faiss-cpu>=1.8.0              # vector similarity search
+
+# --- optional extras ---------------------------------------------------------
+openai>=1.30.0                # optional LLM advisor backend
+transformers>=4.40.0          # optional local HuggingFace advisor backend
+accelerate>=0.29.0            # optional HuggingFace acceleration
+yt-dlp>=2024.1.0              # optional: resolve YouTube URLs as a video source

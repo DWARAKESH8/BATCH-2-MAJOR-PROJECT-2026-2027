@@ -1,0 +1,149 @@
+{
+  "seeds": [
+    7,
+    21,
+    99
+  ],
+  "fps": 8.0,
+  "counting": {
+    "count_mae": 4.784294794432376,
+    "count_rmse": 10.662464475182468,
+    "count_mape": 3.027366142519447,
+    "density_mae": 0.9941357436659185,
+    "density_bias": -0.6983201418137133,
+    "density_r": 0.9257180471246115,
+    "samples": 12429
+  },
+  "typology": {
+    "scenario_accuracy": 0.875,
+    "frame_accuracy": 0.728525641025641,
+    "per_scenario": {
+      "normal_flow": {
+        "expected": "NORMAL_FLOW",
+        "predicted": "NORMAL_FLOW",
+        "share": 0.696,
+        "correct": true
+      },
+      "rapid_influx": {
+        "expected": "RAPID_INFLUX",
+        "predicted": "NORMAL_FLOW",
+        "share": 0.487,
+        "correct": false
+      },
+      "bottleneck": {
+        "expected": "BOTTLENECK_CONGESTION",
+        "predicted": "BOTTLENECK_CONGESTION",
+        "share": 0.708,
+        "correct": true
+      },
+      "counterflow": {
+        "expected": "COUNTERFLOW_CONFLICT",
+        "predicted": "COUNTERFLOW_CONFLICT",
+        "share": 1.0,
+        "correct": true
+      },
+      "static_blockage": {
+        "expected": "STATIC_BLOCKAGE",
+        "predicted": "STATIC_BLOCKAGE",
+        "share": 0.722,
+        "correct": true
+      },
+      "turbulent_surge": {
+        "expected": "TURBULENT_SURGE",
+        "predicted": "TURBULENT_SURGE",
+        "share": 0.662,
+        "correct": true
+      },
+      "panic_dispersal": {
+        "expected": "PANIC_DISPERSAL",
+        "predicted": "PANIC_DISPERSAL",
+        "share": 0.848,
+        "correct": true
+      },
+      "escalating_crush": {
+        "expected": "PROGRESSIVE_CRUSH",
+        "predicted": "PROGRESSIVE_CRUSH",
+        "share": 0.757,
+        "correct": true
+      }
+    }
+  },
+  "retrieval": {
+    "precision@1": 0.8,
+    "recall@1": 0.7714285714285715,
+    "precision@3": 0.3666666666666667,
+    "recall@3": 0.8571428571428571,
+    "precision@5": 0.36047619047619045,
+    "recall@5": 0.8857142857142857,
+    "mrr": 0.830952380952381,
+    "ndcg": 0.8423236314512297,
+    "latency_ms": 10.882752282278878,
+    "backend": "faiss"
+  },
+  "forecast": {
+    "mae": 0.0795407648883593,
+    "baseline_mae": 0.1312103161210979,
+    "skill": 0.39379183558289144,
+    "within_0.1": 0.7775757575757576,
+    "n": 6600,
+    "median_lead_sec": 7.25
+  },
+  "escalation": {
+    "changes": 53,
+    "per_minute": 2.0423892100192687,
+    "flap_rate": 0.0
+  },
+  "ablation": {
+    "local_density": {
+      "share": 0.1393820753205128,
+      "delta": 0.1393820753205128,
+      "band_change_rate": 0.35681089743589745
+    },
+    "crowd_pressure": {
+      "share": 0.20081377403846157,
+      "delta": 0.20081377403846157,
+      "band_change_rate": 0.41402243589743587
+    },
+    "flow_disorder": {
+      "share": 0.16232088141025638,
+      "delta": 0.16232088141025638,
+      "band_change_rate": 0.28509615384615383
+    },
+    "bottleneck": {
+      "share": 0.08009834134615386,
+      "delta": 0.08009834134615386,
+      "band_change_rate": 0.15096153846153845
+    },
+    "oscillation": {
+      "share": 0.09357923878205128,
+      "delta": 0.09357923878205128,
+      "band_change_rate": 0.18645833333333334
+    },
+    "speed": {
+      "share": 0.019643253205128205,
+      "delta": 0.019643253205128205,
+      "band_change_rate": 0.04391025641025641
+    }
+  },
+  "runtime": {
+    "frames": 960,
+    "stage_ms_per_frame": {
+      "detect": 0.0,
+      "track": 0.65,
+      "risk": 4.1,
+      "rag": 12.72,
+      "advise": 0.04,
+      "draw": 0.0
+    },
+    "total_ms_per_frame": 17.51,
+    "throughput_fps": 57.11,
+    "backends": {
+      "detector": "supplied",
+      "rag": "faiss",
+      "advisor": "fallback",
+      "forecast": "transformer",
+      "calibration": "homography",
+      "velocity": "centroid-tracking"
+    }
+  }
+}

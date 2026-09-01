@@ -1,0 +1,40 @@
+Crowd Density Thresholds and Escalation Bands
+
+These bands follow the pedestrian level-of-service tradition established by Fruin and used in
+venue design and safety certification worldwide. Densities are stated as persons per square
+metre of usable walking surface, measured locally rather than averaged over a whole area: a
+courtyard averaging one person per square metre can still contain a lethal pocket at six.
+
+Below 1 person per square metre. Free circulation. People choose their own speed and path.
+Routine monitoring only.
+
+1 to 2 persons per square metre. Comfortable movement with minor path adjustment. Normal for a
+busy concourse. No intervention required.
+
+2 to 3 persons per square metre. Movement becomes constrained. Walking speed drops noticeably
+and overtaking stops. Increase monitoring, confirm alternative routes are open and staffed, and
+begin watching the trend rather than the level.
+
+3 to 4 persons per square metre. Restricted movement. Individuals can no longer choose their
+own path and begin to move as a group. Contact between people becomes frequent. This is the
+band in which to act: meter inflow, open additional routes, and place marshals. Interventions
+started here are still effective; interventions started later frequently are not.
+
+4 to 5 persons per square metre. Severely restricted. Involuntary contact is continuous.
+Individuals cannot stop, turn, or bend down. A person who falls cannot get up unaided and may
+not be seen. Stop inflow immediately and open every available egress.
+
+Above 5 persons per square metre. Critical. Pressure transmits through the crowd rather than
+being absorbed, so a push at the back is felt at the front. Shock waves become possible.
+Compressive asphyxia becomes possible within roughly thirty seconds in the densest pockets,
+and it does not require anyone to fall over. Treat as a major incident.
+
+Important qualifications.
+Density alone is not the whole risk. A dense crowd moving coherently in one direction is far
+safer than a less dense crowd containing opposing streams or stop-and-go waves. Always read
+density together with movement quality.
+Measured density is only as good as the camera calibration. An uncalibrated view cannot report
+absolute persons per square metre reliably, and figures from one should be treated as relative
+indicators of trend, not as absolute values to compare against these bands.
+Detection-based counting undercounts in exactly this regime, because bodies occlude one another.
+Where the detector reports heavy occlusion, treat the count as a lower bound.

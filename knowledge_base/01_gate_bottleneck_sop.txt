@@ -1,0 +1,36 @@
+Gate and Chokepoint Bottleneck Standard Operating Procedure
+
+Scope. Applies to entries, exits, turnstiles, stairways, bridges, tunnels, ramps and any
+constriction where the walkway narrows and arrival rate can exceed discharge rate.
+
+Recognition. A bottleneck is forming when the queue upstream of the constriction grows while
+the number of people passing through per minute stops rising or begins to fall. This is the
+congested branch of the pedestrian flow relationship: beyond a critical density, adding more
+people reduces total throughput rather than increasing it. Crowd density at the throat rising
+above three persons per square metre with falling throughput is the operational trigger.
+
+Immediate actions, in order.
+1. Meter the inflow upstream. Hold arriving groups in batches at the previous decision point.
+   This is the single highest-value action and it becomes harder every second it is delayed.
+2. Open additional discharge capacity. Every extra metre of effective aperture width increases
+   discharge roughly in proportion, so opening a second gate is worth far more than urging
+   people at the existing one to move faster.
+3. Send marshals to the throat to keep people moving through it and to stop anybody halting,
+   turning, or setting objects down inside the aperture.
+4. Inspect the aperture for a physical cause. Bottlenecks frequently have a removable cause:
+   a stalled wheelchair, a merchandise stand, a fallen barrier, a ticket check that has slowed,
+   a person stopped to use a phone. Clearing the cause restores throughput instantly.
+5. Broadcast a route diversion naming the alternative gate explicitly and telling people what
+   they will find there.
+
+Prohibited actions. Do not close a gate that a crowd is already pressing toward. Closing the
+discharge point of a loaded queue converts congestion into compression within seconds. Reduce
+the flow upstream instead and let the queue drain forward.
+
+Escalation. If throughput has not recovered within two minutes of metering, or if density at
+the throat exceeds five persons per square metre, escalate to the crush response procedure and
+notify the safety officer directly rather than through the routine channel.
+
+Recording. Log the time of first recognition, the time inflow metering began, the identity of
+the gate opened as an alternative, and the throughput before and after. These four facts are
+the ones asked for in every post-event review.

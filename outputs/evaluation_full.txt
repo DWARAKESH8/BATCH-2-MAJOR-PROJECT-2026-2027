@@ -1,0 +1,200 @@
+CrowdGuard-RAG evaluation
+seeds=[7, 21, 99]  fps=8.0  scenarios=8
+
+running simulations...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9471.90it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 16626.77it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 18168.61it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 20251.89it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 8406.56it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 7365.08it/s]
+'[Errno 8] nodename nor servname provided, or not known' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json
+Retrying in 1s [Retry 1/5].
+'[Errno 8] nodename nor servname provided, or not known' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json
+Retrying in 2s [Retry 2/5].
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 8126.20it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 8145.35it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 15455.54it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 7742.04it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 16414.50it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 16720.72it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 16519.32it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 20889.38it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 15185.00it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 15917.37it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 8859.45it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 16169.37it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 13435.76it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 15234.27it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 14643.53it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 18891.61it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 20678.41it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 7993.14it/s]
+  24 runs, 12480 frames
+
+==============================================================================
+1. COUNTING AND DENSITY  (against simulator ground truth)
+==============================================================================
+The simulator knows where it put every agent, so these are true errors,
+not self-consistency checks. Detections carry positional noise and
+occlusion dropout, so the counting error here is a real detector-style error.
+
+  samples                      12429
+  count MAE                    4.78 people
+  count RMSE                   10.66 people
+  count MAPE                   3.0 %
+  density MAE                  0.99 persons/m2
+  density bias (pred - true)   -0.70 persons/m2
+  density correlation r        0.926
+
+  In the crush band (true density >= 4/m2), n=4952:
+    count MAPE                 7.2 %
+    density MAE                1.74 persons/m2
+    density bias               -1.09 persons/m2   <- negative means the system UNDER-reports exactly where it matters most
+
+==============================================================================
+2. FAILURE-MODE CLASSIFICATION  (against scripted scenarios)
+==============================================================================
+Each scenario is physically constructed to produce one specific failure
+mode. The classifier is scored on the developed second half of each run,
+over multiple random seeds.
+
+  normal_flow        expected NORMAL_FLOW            got NORMAL_FLOW             69.6%  PASS
+  rapid_influx       expected RAPID_INFLUX           got NORMAL_FLOW             48.7%  FAIL
+  bottleneck         expected BOTTLENECK_CONGESTION  got BOTTLENECK_CONGESTION   70.8%  PASS
+  counterflow        expected COUNTERFLOW_CONFLICT   got COUNTERFLOW_CONFLICT   100.0%  PASS
+  static_blockage    expected STATIC_BLOCKAGE        got STATIC_BLOCKAGE         72.2%  PASS
+  turbulent_surge    expected TURBULENT_SURGE        got TURBULENT_SURGE         66.2%  PASS
+  panic_dispersal    expected PANIC_DISPERSAL        got PANIC_DISPERSAL         84.8%  PASS
+  escalating_crush   expected PROGRESSIVE_CRUSH      got PROGRESSIVE_CRUSH       75.7%  PASS
+
+  scenario-level accuracy      7/8
+  frame-level accuracy         4546/6240 = 72.9 %
+
+  Confusion (rows = expected, columns = predicted, frame-level):
+     PROGRESSI TURBULENT PANIC_DIS STATIC_BL COUNTERFL BOTTLENEC RAPID_INF NORMAL_FL
+    PROGRESSI        76%       24%        0%        0%        0%        0%        0%        0%
+    TURBULENT         1%       66%        0%        0%        1%       30%        2%        0%
+    PANIC_DIS         0%        0%       85%        0%        9%        0%        0%        6%
+    STATIC_BL         0%        5%        0%       72%        5%       13%        4%        0%
+    COUNTERFL         0%        0%        0%        0%      100%        0%        0%        0%
+    BOTTLENEC         0%        0%        0%        1%        4%       71%       10%       14%
+    RAPID_INF         0%        0%        0%        0%       10%        3%       38%       49%
+    NORMAL_FL         0%        0%        4%        0%       11%        0%       15%       70%
+
+==============================================================================
+3. RAG RETRIEVAL  (hand-written query set with declared relevant documents)
+==============================================================================
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9269.28it/s]
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 17547.96it/s]
+  backend                      faiss
+  indexed chunks               43 from 11 documents
+  queries                      35
+
+  Precision@1                 0.800        Recall@1  0.771
+  Precision@3                 0.367        Recall@3  0.857
+  Precision@5                 0.360        Recall@5  0.886
+  MRR                          0.831
+  nDCG@5                       0.842
+  mean query latency           43.1 ms
+
+  Queries whose top hit was not a declared relevant document (7):
+    "should I close the gate that the crowd is pushing toward"
+       got  ['07_static_blockage_sop.txt', '04_crush_risk_incident_patterns.txt', '05_operator_alert_template.txt']
+       want ['01_gate_bottleneck_sop.txt']
+    "what to broadcast to the crowd over public address"
+       got  ['06_turbulent_surge_sop.txt', '04_crush_risk_incident_patterns.txt', '03_high_density_thresholds.txt']
+       want ['05_operator_alert_template.txt']
+    "people being pushed sideways without choosing to move"
+       got  ['07_static_blockage_sop.txt', '04_crush_risk_incident_patterns.txt', '02_counterflow_sop.txt']
+       want ['06_turbulent_surge_sop.txt']
+    "dense crowd has completely stopped moving and people keep "
+       got  ['04_crush_risk_incident_patterns.txt', '06_turbulent_surge_sop.txt', '07_static_blockage_sop.txt']
+       want ['07_static_blockage_sop.txt']
+    "crowd running away from something scattering directions"
+       got  ['06_turbulent_surge_sop.txt', '04_crush_risk_incident_patterns.txt', '02_counterflow_sop.txt']
+       want ['08_panic_dispersal_sop.txt']
+    "perspective makes far away people look denser"
+       got  ['03_high_density_thresholds.txt', '10_camera_zones_and_calibration.txt', '04_crush_risk_incident_patterns.txt']
+       want ['10_camera_zones_and_calibration.txt']
+    "which gate chronically bottlenecks across many events"
+       got  ['01_gate_bottleneck_sop.txt', '07_static_blockage_sop.txt']
+       want ['11_post_incident_evidence.txt']
+
+==============================================================================
+4. FORECASTING  (each prediction scored against what actually happened)
+==============================================================================
+  Every forecast made at time t is compared with the risk score observed
+  at t+30s in the same run. Nothing is fitted to this data.
+
+  matured forecasts            6600
+  forecast MAE                 0.1995
+  persistence-baseline MAE     0.1312   (assume risk stays where it is)
+  skill score vs persistence   -0.521   (WORSE than doing nothing)
+  within 0.10                  41.6 %
+  within 0.20                  60.9 %
+  median warning lead time     5 s before risk actually reached CRITICAL
+                               (n=21 runs that reached CRITICAL)
+
+==============================================================================
+5. ESCALATION BEHAVIOUR  (alert volume and flapping)
+==============================================================================
+  A safety system that cries wolf gets muted, so alert volume is itself a
+  quality metric. Flapping counts state changes that reverse within 30 s.
+
+  total state changes          36
+  monitored duration           25.9 minutes across 24 runs
+  state changes per minute     1.39
+  flapping transitions         0  (0.0 % of all changes)
+
+==============================================================================
+6. FEATURE ABLATION  (what each term actually contributes)
+==============================================================================
+  Recomputes the fused score with each feature's weight zeroed, and reports
+  how much the score moves and how often the risk band changes.
+
+  feature             mean share   MAE if removed   band changes
+  local_density           0.1394           0.1394          35.7%
+  crowd_pressure          0.2008           0.2008          41.4%
+  flow_disorder           0.1623           0.1623          28.5%
+  bottleneck              0.0801           0.0801          15.1%
+  oscillation             0.0936           0.0936          18.6%
+  speed                   0.0196           0.0196           4.4%
+
+==============================================================================
+7. RUNTIME  (per-stage latency)
+==============================================================================
+  frames processed             960
+    detect                        0.00 ms/frame
+    track                         0.37 ms/frame
+    risk                          2.05 ms/frame
+    rag                           8.51 ms/frame
+    advise                        0.02 ms/frame
+    draw                          0.00 ms/frame
+  total                          10.95 ms/frame
+  throughput                   91.32 fps (detection bypassed in simulation)
+  backends                     {'detector': 'supplied', 'rag': 'faiss', 'advisor': 'fallback', 'forecast': 'trend', 'calibration': 'homography'}
+
+==============================================================================
+WHAT THIS EVALUATION DELIBERATELY DOES NOT CLAIM
+==============================================================================
+  There is no headline "risk prediction accuracy" figure here, and that is a
+  deliberate choice rather than an omission.
+
+  No labelled dataset of true crowd risk exists for this deployment. Any single
+  accuracy number for the fused risk score would have to be produced by scoring
+  the model against labels the model itself generated, which measures nothing.
+  The scenario results above are the honest version of that claim: the failure-mode
+  classifier is scored against physically scripted situations whose correct answer
+  was fixed by construction before the classifier saw them.
+
+  To validate the fused score properly, three things are needed, and the code to
+  collect all three is already in place:
+    1. Counting error against an annotated public dataset (MOT20, JHU-CROWD++).
+    2. Expert agreement: several qualified people independently rating recorded
+       clips, compared against the system with Cohen's kappa.
+    3. Operator acknowledgements gathered over a real event season, which the
+       acknowledgement store already records in the form needed for training.
+
+report written to /Users/dwarakesh/Downloads/CrowdGuard_RAG_Implementation/outputs/evaluation_report.json

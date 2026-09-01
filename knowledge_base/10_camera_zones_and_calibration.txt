@@ -1,0 +1,39 @@
+Camera Zone Definition and Ground-Plane Calibration Procedure
+
+Why calibration matters. A count divided by a guessed area is not a density. Under perspective,
+a person forty metres from the camera occupies a small fraction of the pixels of a person five
+metres away, so a uniform pixel-to-metre conversion systematically misreports density in the
+far field. Absolute persons-per-square-metre figures, and any comparison against published
+safety thresholds, are only meaningful once the camera has been calibrated to the ground plane.
+
+Calibration procedure.
+1. Identify a rectangle on the ground within the camera view whose real dimensions are known.
+   Paving grids, pitch markings, standard barrier spacing, parking bays, and expansion joints
+   all work. Measure it if it is not already documented.
+2. Record the pixel coordinates of its four corners in the camera image.
+3. Record the corresponding real-world coordinates in metres, using any consistent origin.
+4. Enter both sets as the calibration for that camera.
+5. Verify. Ask the system to report the distance between two other known points in the view. If
+   the error exceeds roughly a quarter of a metre, the corner points were misidentified or the
+   surface is not flat, and the calibration should be redone rather than accepted.
+
+Recalibrate whenever the camera is moved, refocused, or its zoom is changed. An out-of-date
+calibration is more dangerous than none, because it reports confident numbers that are wrong.
+
+Zone definition. Define zones that correspond to how the venue is actually operated, and name
+them the way staff name them on the radio. An alert reading "Gate 3 throat" reaches somebody who
+can act; an alert reading "central image region" does not.
+
+Assign each zone a type, because the type determines which procedure applies:
+- gate: an aperture where arrival rate can exceed discharge rate
+- exit: a discharge point out of the monitored area
+- corridor: a through-route with a dominant direction of travel
+- stage: an area with an attraction drawing people forward
+- area: general standing or circulation space
+
+Record a design capacity for each zone in persons per square metre. For a gate throat this is
+usually lower than for open standing space, because the consequences of reaching it are worse.
+
+Blind spots. Record which parts of the venue no camera covers, and treat that list as part of
+the safety plan. Every measurement the system reports is conditional on the area being in view,
+and the most dangerous place in a venue is frequently the one nobody is looking at.
